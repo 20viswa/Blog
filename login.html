@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/474x/c8/f7/bd/c8f7bdd3e52c315dafb9641f92672498.jpg");
+        }
+        .container{
+            backdrop-filter: blur(20px);
+            margin: 12% auto 0 auto;
+            width: 35%;
+            border: 1px solid white;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            padding-bottom: 20px;
+            font-family: monospace;
+        }
+        .title{
+            color: bisque;
+            font-size: 2rem;
+        }
+        .form-group{
+            margin: 20px 0;
+        }
+        .form-group input{
+            padding: 10px;
+            width: 80%;
+            background-color: inherit;
+            border-width: 2px bisque;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-bottom-style: solid;
+            outline: none;
+        }
+        .form-group input::placeholder{
+            color: antiquewhite;
+        }
+        .form-checkbox{
+            width: 80%;
+            margin: auto;
+        }
+        .form-checkbox label{
+            color: aliceblue;
+        }
+        .form-checkbox a{
+            text-decoration: none;
+            color: aliceblue;
+            margin-left: 50px;
+        }
+        .form-group button{
+            background-color: aliceblue;
+            color: black;
+            border: none;
+            padding: 15px;
+            width: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form class="container" action="./biography.html">
+        <p class="title">User Login</p>
+        <div class="form-group">
+            <input type="email" placeholder="Enter Email" name="email">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password" name="email">
+        </div>
+        <div class="form-checkbox">
+            <input type="checkbox">
+            <label for="checkbox"> Remember Me</label>
+            <a href="">Forget Password?</a>
+        </div>
+        <div class="form-group">
+            <button>LOGIN</button>
+        </div>
+    </form>
+</body>
+</html>
